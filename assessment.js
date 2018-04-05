@@ -8,7 +8,7 @@ var me = {
 
 // #2 Add a new key/value pair to the me object using dot notation. The new key should be 'favecolor' and set it to your favorite color as a string
 
-me.favecolor = "Blue";
+me.faveColor = "Blue";
 
 // #3 Below is an object, 'message'. Below it, add a 'text' key using bracket notation and assign it a string of whatever you would like.
 //DON'T TOUCH THE CODE BELOW
@@ -22,6 +22,14 @@ message["text"]= "I got cab'n fever!";
 // #4 Create an object called 'adjustCount' and create two methods. One called 'upVote' and one called 'downVote'. upVote should take in a number and add one to it and downVote should take in a number and minus one from it.
 
 // CODE HERE
+var adjustCount = {
+  upVote:function(val1){
+    return val1 + 1;
+  },
+  downVote:function(val2){
+    return val2 - 1;
+  }
+};
 
 // #5 Create an array called 'myFriends' with four of your friends names
 
