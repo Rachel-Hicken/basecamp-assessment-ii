@@ -50,11 +50,12 @@ var myArrayCopy = myArray.slice();
 var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 //DON'T TOUCH THE CODE ABOVE
 function evensOnly() {
-  // CODE HERE
+  return myNumbers.filter(val => val%2 === 0);
 }
 
 // #9 Using filter(), return only your friends of the array of people below. Assign it to a variable called 'trueFriends'.
-// CODE HERE
+var trueFriends = peopleIknow.filter(function(val){return val.friend === true});
+
 var peopleIknow = [
   { name: "Steve", friend: true },
   { name: "Dan", friend: false },
@@ -66,3 +67,9 @@ var peopleIknow = [
 
 // #10 create a function called indexFinder and loop over the randomNumbers array below and return the result into a new array called 'indexes' with just their indexes. Be sure to invoke indexFinder.
 let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0];
+var indexes = [];
+function indexFinder (randomNumbers){
+  randomNumbers.forEach(element => {
+    indexes.push(randomNumbers.indexOf())
+  });
+  }
