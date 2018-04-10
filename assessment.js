@@ -68,8 +68,16 @@ var peopleIknow = [
 // #10 create a function called indexFinder and loop over the randomNumbers array below and return the result into a new array called 'indexes' with just their indexes. Be sure to invoke indexFinder.
 let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0];
 var indexes = [];
-function indexFinder (randomNumbers){
-  randomNumbers.forEach(element => {
-    indexes.push(randomNumbers.indexOf())
-  });
+function indexFinder (numArray){
+  for (i=0; i<numArray.lenght; i++){
+    indexes.push(numArray.indexOf(i));
   }
+}
+indexFinder(randomNumbers);
+
+// function indexFinder (numArray){
+//   numArray.forEach(element => {
+//     indexes.push(numArray.indexOf())
+//   });
+//   }
+//   indexFinder(randomNumbers);
